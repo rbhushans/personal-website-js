@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>personal projects</title>
+        <meta name="description" content="Read about Rohan Bhushan's personal projects, including Mask Bot and Social University Platform">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="stylesheet" href="styles/home.css" type="text/css">
+    </head>
+    <body id="projects">
+        <header>
+            <a href="index.html">
+                <img id="header-logo" src="android-chrome-192x192.png" height="100" width="100" alt="header-logo">
+            </a>
+            <nav>
+                <ul id="header-ul">
+                    <li class="header-li"><a href="about.html">about</a></li>
+                    <li class="header-li"><a href="projects.html">personal projects</a></li>
+                    <li class="header-li"><a href="experience.html">experience</a></li>
+                </ul>
+            </nav>
+            <div id="menuToggle">
+                <label id="menu-icon" for="fake-checkbox">
+                    <img src="assets/menu_icon.png" height="70" width="70" alt="Menu Icon">
+                </label>
+                <input id="fake-checkbox" type="checkbox"/>
+                <ul id="menu">
+                    <li class="drop-li"><a href="about.html">about</a></li>
+                    <li class="drop-li"><a href="projects.html">personal projects</a></li>
+                    <li class="drop-li"><a href="experience.html">experience</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <h1 class="title">personal projects</h1>
+
+        <main id="main-projects">
+            <section class="project-card" id="mask-bot">
+                <div class="extra-pic">
+                    <video class="project-subpic" preload="auto" autoplay loop="loop" muted="muted">
+                        <source src="assets/maskbot-vid.mp4" type="video/mp4">
+                        Your browser does not support the video tag
+                    </video>
+                    <picture id="mask-bot-desktop">
+                        <source media="(min-width: 900px)" srcset="assets/Mask_Bot_Logo.png">
+                        <source media="(min-width: 540px)" srcset="assets/Mask_Bot_Logo.png">
+                        <img loading=lazy class="project-subpic" src="assets/Mask_Bot_Logo.png" alt="Mask bot logo">
+                    </picture>
+                </div>
+                
+                <div class="project-text">
+                    <h2 class="project-title">Mask Bot</h2>
+                    <p class="project-description">I developed an automated Twitter bot which replies to tweets of images of groups of people that are
+                        not wearing masks. This was created during the COVID-19 pandemic, with the intention of trying to urge as many
+                        people to wear masks. The bot used a computer vision face mask detection model to identify faces without masks. 
+                        The source code for the bot can be found <a href="https://github.com/rbhushans/Mask-Bot">here</a>.
+                    </p>
+                    <ul class="proj-skill-list">
+                        <li class="proj-skill">python</li>
+                        <li class="proj-skill">computer vision</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section class="project-card" id="sup">
+                <picture >
+                    <source media="(min-width: 900px)" srcset="assets/sup_home_small.jpeg">
+                    <source media="(min-width: 540px)" srcset="assets/sup_home_small.jpeg">
+                    <img id="sup-mobile" loading=lazy class="project-subpic" src="assets/sup_home_small.jpeg" alt="SUP-Home">
+                </picture>
+                <div class="project-text">
+                    <h2 class="project-title">Social University Platform</h2>
+                    <p class="project-description">I created an iOS app using React Native, NodeJS, and Firebase to connect students 
+                        at UCSD with clubs and organizations in a team of 10, applying an Agile workflow.
+                    </p>
+                    <ul class="proj-skill-list">
+                        <li class="proj-skill">javascript</li>
+                        <li class="proj-skill">react native</li>
+                        <li class="proj-skill">nodeJS</li>
+                        <li class="proj-skill">Firebase</li>
+                    </ul>
+                </div>
+                <video id="sup-desktop" class="project-subpic" preload="auto" autoplay loop="loop" muted="muted">
+                    <source src="assets/sup-record.mp4" type="video/mp4">
+                    Your browser does not support the video tag
+                </video>
+            </section>
+            
+            <section class="project-card" id="spotify-mad-libs">
+                <picture >
+                    <source media="(min-width: 900px)" srcset="assets/spotify_mad.jpeg">
+                    <source media="(min-width: 540px)" srcset="assets/spotify_mad_medium.jpeg">
+                    <img loading=lazy class="project-subpic" src="assets/spotify_mad_small.jpeg" alt="Spotify Mad Libs Screen">
+                </picture>
+                <div class="project-text">
+                    <h2 class="project-title">Spotify Mad Libs</h2>
+                    <p class="project-description">Constructed a React/Node Web Application using the Spotify API, which displays amusing messages
+                        based on the user’s top artists and tracks, and allows for user input of verbs, adjectives, and nouns.
+                    </p>
+                    <ul class="proj-skill-list">
+                        <li class="proj-skill">reactJS</li>
+                        <li class="proj-skill">nodeJS</li>
+                        <li class="proj-skill">html</li>
+                        <li class="proj-skill">css</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section class="project-card" id="football-analytics">
+                <picture>
+                    <source media="(min-width: 900px)" srcset="assets/football_betting.png">
+                    <source media="(min-width: 540px)" srcset="assets/football_betting_medium.png">
+                    <img id="football-mobile" loading=lazy class="project-subpic" src="assets/football_betting_small.png" alt="Football Spreadsheet">
+                </picture>
+                <div class="project-text">
+                    <h2 class="project-title">Football Analytics and Odds Web Scraper</h2>
+                    <p class="project-description">Using JavaScript, created an automated program to scrape statistics from 
+                        various websites, the odds for each game, and update scores hourly.
+                    </p>
+                    <ul class="proj-skill-list">
+                        <li class="proj-skill">javascript</li>
+                    </ul>
+                </div>
+                <picture>
+                    <source media="(min-width: 1000px)" srcset="assets/football_betting.png">
+                    <img id="football-desktop" loading=lazy class="project-subpic" src="assets/football_betting.png" alt="Football Spreadsheet">
+                </picture>
+            </section>
+        </main>
+
+        <footer>
+            <hr/>
+            <div class="footer-center">
+                <ul class="footer-link-list">
+                    <li class="footer-link">
+                        <a href="https://www.linkedin.com/in/rohan-bhushan-a955b3194/" target="_blank">
+                            <img src="assets/linkedin-logo-copy.png" height="40" width="40" alt="LinkedIn Logo">
+                        </a>
+                    </li>
+                    <li class="footer-link">
+                        <a href="https://github.com/rbhushans" target="_blank">
+                            <img src="assets/25231.png" height="40" width="40" alt="GitHub Logo">
+                        </a>
+                    </li>
+                    <li class="footer-link">
+                        <a href="mailto:rsbhusha@ucsd.edu" target="_blank">
+                            <img src="assets/Email-Icon.png" height="50" width="50" alt="Email Icon">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="footer-center" id="footer-links">
+                <ul class="footer-link-list">
+                    <li class="footer-link"><a href="index.html">home</a></li>
+                    <li class="footer-link"><a href="about.html">about</a></li>
+                    <li class="footer-link"><a href="projects.html">personal projects</a></li>
+                    <li class="footer-link"><a href="experience.html">experience</a></li>
+                    <li class="footer-link"><a href="contact.html">contact</a></li>
+                </ul> 
+            </div>
+
+            <div class="footer-center">
+                <p id="footer-tag">Rohan Bhushan &copy; 2021</p>
+            </div>
+        </footer>
+    </body>
+</html>

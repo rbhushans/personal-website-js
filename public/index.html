@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Rohan Bhushan</title>
+        <meta name="description" content="Rohan Bhushan is a programmer, student, and incoming intern at Amazon. Find out more about his personal projects, experiences, and more!">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="stylesheet" href="styles/home.css" type="text/css">
+    </head>
+    <body id="home">
+        <header>
+            <a href="index.html">
+                <img id="header-logo" src="android-chrome-192x192.png" height="100" width="100" alt="header-logo">
+            </a>
+            <nav>
+                <ul id="header-ul">
+                    <li class="header-li"><a href="about.html">about</a></li>
+                    <li class="header-li"><a href="projects.html">personal projects</a></li>
+                    <li class="header-li"><a href="experience.html">experience</a></li>
+                </ul>
+            </nav>
+            <div id="menuToggle">
+                <label id="menu-icon" for="fake-checkbox">
+                    <img src="assets/menu_icon.png" height="70" width="70" alt="Menu Icon">
+                </label>
+                <input id="fake-checkbox" type="checkbox"/>
+                <ul id="menu">
+                    <li class="drop-li"><a href="about.html">about</a></li>
+                    <li class="drop-li"><a href="projects.html">personal projects</a></li>
+                    <li class="drop-li"><a href="experience.html">experience</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <section id="home-intro">
+            <div id="blur-container">
+                <video id="home-background" preload="auto" autoplay loop="loop" muted="muted">
+                    <source src="assets/background.mp4" type="video/mp4">
+                    This browser does not support this video.
+                </video>
+            </div>
+
+            <h1 id="intro-text">hi! my name is 
+                <span style="display:block; margin:30px 0px" id="intro-name">Rohan Bhushan</span>
+                machine learning 👾 &larr;&rarr; web development 💻 &larr;&rarr; algorithms & data structures 📊
+             </h1>
+        </section>
+
+        <main id="home-subsections">
+            <section class="home-section">
+                <picture >
+                    <source media="(min-width: 900px)" srcset="assets/headshot.JPG">
+                    <source media="(min-width: 540px)" srcset="assets/headshot_medium.jpg">
+                    <img class="home-subpic" src="assets/headshot_small.jpg" alt="Rohan Portrait">
+                </picture>
+                <div class="home-section-info">
+                    <h2 class="home-subtitle">about me</h2>
+                    <p class="home-subdescrip">I'm currently a third year Computer Science student at 
+                        University of California, San Diego. I have experience in Java, Python, C/C++, 
+                        JavaScript (React, Node), and HTML. I enjoy watching football (go Ravens!), 
+                        listening to music, and coding.
+                    </p>
+                    <a class="more-button" href="about.html">More ></a>
+                </div>
+            </section>
+            
+            <section class="home-section">
+                <div class="extra-pic">
+                    <picture >
+                        <source media="(min-width: 900px)" srcset="assets/football_dashboard.png">
+                        <img class="home-subpic long-pic" src="assets/football_dashboard_medium.png" alt="Football Dashboard">
+                    </picture>
+                    <picture >
+                        <source media="(min-width: 900px)" srcset="assets/football_betting.png">
+                        <img class="home-subpic long-pic" src="assets/football_betting_medium.png" alt="Football Spreadsheet">
+                    </picture>
+                </div>
+                <div class="home-section-info">
+                    <h2 class="home-subtitle">personal projects</h2>
+                    <p class="home-subdescrip">Recently I developed an automated Twitter bot which uses a machine
+                         learning trained face mask detection model to identify images of multiple people without 
+                         masks, and remind them to wear a mask due to the COVID-19 pandemic. I am also currently 
+                         working on a web app that uses the Spotify Web API to create fun mad libs statements.
+                    </p>
+                    <a class="more-button" href="projects.html">More ></a>
+                </div>
+            </section>
+            
+            <section class="home-section">
+                <picture >
+                    <source media="(min-width: 900px)" srcset="assets/amazon_logo_1_.png">
+                    <source media="(min-width: 540px)" srcset="assets/amazon_logo_1_.png">
+                    <img class="home-subpic" src="assets/amazon_logo_1_.png" alt="Amazon Logo">
+                </picture>
+                <div class="home-section-info">
+                    <h2 class="home-subtitle">experience</h2>
+                    <p class="home-subdescrip">I'm currently working as a Business Systems Analyst with UCSD Health, developing
+                        applications and scripts for various projects. This summer I will be working as a SDE Intern at Amazon.
+                    </p>
+                    <a class="more-button" href="experience.html">More ></a>
+                </div>
+            </section>
+        </main>
+        <br />
+        <footer>
+            <hr/>
+            <div class="footer-center">
+                <ul class="footer-link-list">
+                    <li class="footer-link">
+                        <a href="https://www.linkedin.com/in/rohan-bhushan-a955b3194/" target="_blank">
+                            <img src="assets/linkedin-logo-copy.png" height="40" width="40" alt="LinkedIn Logo">
+                        </a>
+                    </li>
+                    <li class="footer-link">
+                        <a href="https://github.com/rbhushans" target="_blank">
+                            <img src="assets/25231.png" height="40" width="40" alt="GitHub Logo">
+                        </a>
+                    </li>
+                    <li class="footer-link">
+                        <a href="mailto:rsbhusha@ucsd.edu" target="_blank">
+                            <img src="assets/Email-Icon.png" height="50" width="50" alt="Email Icon">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="footer-center" id="footer-links">
+                <ul class="footer-link-list">
+                    <li class="footer-link"><a href="index.html">home</a></li>
+                    <li class="footer-link"><a href="about.html">about</a></li>
+                    <li class="footer-link"><a href="projects.html">personal projects</a></li>
+                    <li class="footer-link"><a href="experience.html">experience</a></li>
+                    <li class="footer-link"><a href="contact.html">contact</a></li>
+                </ul> 
+            </div>
+
+            <div class="footer-center">
+                <p id="footer-tag">Rohan Bhushan, 2021</p>
+            </div>
+            <br />
+        </footer>
+    
+    </body>
+</html>

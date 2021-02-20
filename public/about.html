@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>about</title>
+        <meta name="description" content="Learn more about Rohan Bhushan, and his interests and hobbies">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="stylesheet" href="styles/home.css" type="text/css">
+    </head>
+    <body>
+        <header>
+            <a href="index.html">
+                <img id="header-logo" src="android-chrome-192x192.png" height="100" width="100" alt="header-logo">
+            </a>
+            <nav>
+                <ul id="header-ul">
+                    <li class="header-li"><a href="about.html">about</a></li>
+                    <li class="header-li"><a href="projects.html">personal projects</a></li>
+                    <li class="header-li"><a href="experience.html">experience</a></li>
+                </ul>
+            </nav>
+            <div id="menuToggle">
+                <label id="menu-icon" for="fake-checkbox">
+                    <img src="assets/menu_icon.png" height="70" width="70" alt="Menu Icon">
+                </label>
+                <input id="fake-checkbox" type="checkbox"/>
+                <ul id="menu">
+                    <li class="drop-li"><a href="about.html">about</a></li>
+                    <li class="drop-li"><a href="projects.html">personal projects</a></li>
+                    <li class="drop-li"><a href="experience.html">experience</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <h1 class="title">about</h1>
+
+        <main id="about-grid">
+            <picture>
+                <source media="(min-width: 900px)" srcset="assets/headshot.JPG">
+                <img class="about-me-pic" id="about-headshot" src="assets/headshot_medium.jpg" alt="Rohan Portrait">
+            </picture>
+            <div class="about-me-text" id="about-first">
+                <h2>about me</h2>
+                <p>I'm currently a third year undergraduate computer science student 
+                    at University of California, San Diego. I have detailed experience in coding
+                    in Java, C, C++, JavaScript, and Python. My expected graduation is 
+                    December 2021. I'm currently working as a Business Systems Analyst with UCSD Health,
+                    working on various applications using Python, AppleScript, and Tableau. I have also accepted
+                    a summer position as a SDE Intern at Amazon.
+                </p>
+            </div>
+            
+            <div class="about-me-text" id="about-second">
+                <h2>interests and hobbies</h2>
+                <ul id="interests-hobbies">
+                    <li>football</li>
+                    <li>I'm a huge Ravens fan, and love to watch football whenever its on. 
+                        Specifically, I love to explore advanced statistics like EPA, CPOE, 
+                        and DVOA.
+                    </li>
+                    <li>chess</li>
+                    <li>Chess has been a consistent interest of mine, and I enjoy exploring different
+                        strategies and openings in my free time.</li>
+                    <li>baking</li>
+                    <li>I'm the vice president and co-founder of the baking club at UCSD.</li>
+                </ul>
+            </div>
+            <picture>
+                <source media="(min-width: 900px)" srcset="assets/brownies.jpeg">
+                <source media="(min-width: 540px)" srcset="assets/brownies_medium.jpeg">
+                <img class="about-me-pic" id="about-brownies" src="assets/brownies_small.jpeg" alt="Rohan Portrait">
+            </picture>
+        </main>
+
+        <footer>
+            <hr/>
+            <div class="footer-center">
+                <ul class="footer-link-list">
+                    <li class="footer-link">
+                        <a href="https://www.linkedin.com/in/rohan-bhushan-a955b3194/" target="_blank">
+                            <img src="assets/linkedin-logo-copy.png" height="40" width="40"  alt="LinkedIn Logo">
+                        </a>
+                    </li>
+                    <li class="footer-link">
+                        <a href="https://github.com/rbhushans" target="_blank">
+                            <img src="assets/25231.png" height="40" width="40" alt="GitHub Logo">
+                        </a>
+                    </li>
+                    <li class="footer-link">
+                        <a href="mailto:rsbhusha@ucsd.edu" target="_blank">
+                            <img src="assets/Email-Icon.png" height="50" width="50" alt="Email Icon">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="footer-center" id="footer-links">
+                <ul class="footer-link-list">
+                    <li class="footer-link"><a href="index.html">home</a></li>
+                    <li class="footer-link"><a href="about.html">about</a></li>
+                    <li class="footer-link"><a href="projects.html">personal projects</a></li>
+                    <li class="footer-link"><a href="experience.html">experience</a></li>
+                    <li class="footer-link"><a href="contact.html">contact</a></li>
+                </ul> 
+            </div>
+
+            <div class="footer-center">
+                <p id="footer-tag">Rohan Bhushan &copy; 2021</p>
+            </div>
+        </footer>
+    </body>
+</html>
