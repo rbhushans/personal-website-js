@@ -176,7 +176,8 @@ footer ul {
 .footer-link-list {
     display: flex;
     align-items: center;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     list-style-type: none;
     background-color: rgb(255, 255, 255);
 }
@@ -184,8 +185,8 @@ footer ul {
 .footer-link {
     display: inline;
     list-style-type: none;
-    float: left;
-    padding-right: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .footer-link a {
@@ -912,10 +913,44 @@ details p, details ul {
     color: var(--skill-color);
     border: var(--skill-color) solid;
     border-radius: 8px;
+    font-family: var(--body-font);
 }
 
 .exp-date-mobile {
     display: none;
+}
+
+#resume {
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--block-bg-color);
+}
+
+#resume-download {
+    font-family: var(--body-font);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#resume > img {
+    justify-self: center;
+    width: 70px;
+    margin: auto;
+}
+
+#resume:hover {
+    background-color: var(--block-hover-color);
 }
 
 @media screen and (max-width: 700px){
@@ -959,6 +994,8 @@ details p, details ul {
         margin-right: 40px;
     }
 }
+
+
 
 
 /* end of experience */

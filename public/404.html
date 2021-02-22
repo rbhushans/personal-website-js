@@ -1,24 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-190344338-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-190344338-1');
+    </script>
+    <meta charset="UTF-8">
     <title>Page Not Found</title>
+    <meta name="description" content="404 Page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="styles/home.css" type="text/css">
   </head>
   <body>
     <header>
+      <a href="index.html">
+          <img id="header-logo" src="android-chrome-192x192.png" height="100" width="100" alt="header-logo">
+      </a>
       <nav>
-          <ul>
-              <li><a href="index.html">ROHAN BHUSHAN</a></li>
-              <li><a href="about.html">about</a></li>
-              <li><a href="projects.html">personal projects</a></li>
-              <li><a href="experience.html">experience</a></li>
-              <li><a href="contact.html">contact</a></li>
+          <ul id="header-ul">
+              <li class="header-li"><a href="about.html">about</a></li>
+              <li class="header-li"><a href="projects.html">personal projects</a></li>
+              <li class="header-li"><a href="experience.html">experience</a></li>
           </ul>
       </nav>
-      
-  </header>
+      <div id="menuToggle">
+          <label id="menu-icon" for="fake-checkbox">
+              <img src="assets/menu_icon.png" height="70" width="70" alt="Menu Icon">
+          </label>
+          <input id="fake-checkbox" type="checkbox"/>
+          <ul id="menu">
+              <li class="drop-li"><a href="about.html">about</a></li>
+              <li class="drop-li"><a href="projects.html">personal projects</a></li>
+              <li class="drop-li"><a href="experience.html">experience</a></li>
+          </ul>
+      </div>
+    </header>
     <h1>This page was not found!</h1>
     <p>Use one the links above to access a valid page</p>
+    <footer>
+      <hr/>
+      <div class="footer-center">
+          <ul class="footer-link-list">
+              <li class="footer-link">
+                  <a href="https://www.linkedin.com/in/rohan-bhushan-a955b3194/" target="_blank">
+                      <img src="assets/linkedin-logo-copy.png" height="40" width="40" alt="LinkedIn Logo">
+                  </a>
+              </li>
+              <li class="footer-link">
+                  <a href="https://github.com/rbhushans" target="_blank">
+                      <img src="assets/25231.png" height="40" width="40" alt="GitHub Logo">
+                  </a>
+              </li>
+              <li class="footer-link">
+                  <a href="mailto:rsbhusha@ucsd.edu" target="_blank">
+                      <img src="assets/Email-Icon.png" height="50" width="50" alt="Email Icon">
+                  </a>
+              </li>
+          </ul>
+      </div>
+      
+      <div class="footer-center" id="footer-links">
+          <ul class="footer-link-list">
+              <li class="footer-link"><a href="index.html">home</a></li>
+              <li class="footer-link"><a href="about.html">about</a></li>
+              <li class="footer-link"><a href="projects.html">personal projects</a></li>
+              <li class="footer-link"><a href="experience.html">experience</a></li>
+              <li class="footer-link"><a href="contact.html">contact</a></li>
+          </ul> 
+      </div>
+
+      <div class="footer-center">
+          <p id="footer-tag">Rohan Bhushan &copy; 2021</p>
+      </div>
+  </footer>
   </body>
 </html>
