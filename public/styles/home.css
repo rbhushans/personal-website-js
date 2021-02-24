@@ -42,14 +42,15 @@
   }
 
 :root{
-    --block-bg-color: #e7f7ff;
-    --block-hover-color: #d5e9ff;
+    --block-bg-color: #5b8194;
+    --block-hover-color: #27546b;
     --header-bar-color: #006E90;
     --page-bg-color: white;
-    --skill-color: rgb(96, 127, 192);
+    --skill-color: rgb(255, 255, 255);
     --title-font: 'Poppins', 'sans-serif';
     --subtitle-font: 'Montserrat', 'sans-serif';
     --body-font: 'Lato', 'sans-serif';
+    --block-font-color: white;
 }
 
 html, body {
@@ -67,6 +68,20 @@ html, body {
 .hide {
     opacity: 0;
     animation: fadeout 1s;
+}
+
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    background-size: cover;
+    margin: 0 !important;
+    padding: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
 }
 
 header {
@@ -271,9 +286,9 @@ footer {
     align-items: center;
     background-color: var(--block-bg-color);
     margin-bottom: 150px;
-    background-color: rgb(226, 241, 255);
     padding: 2%;
     border-radius: 10px;
+    color: var(--block-font-color);
 }
 
 .home-section-info {
@@ -359,13 +374,13 @@ footer {
 .more-button {
     display: inline-block;
     padding: 0.35em 1.2em;
-    border: 0.1em solid #000000;
+    border: 0.1em solid #ffffff;
     margin: 0 0.3em 0.3em 0;
     border-radius: 0.12em;
     box-sizing: border-box;
     text-decoration: none;
     font-weight: 300;
-    color:#000000;
+    color:#ffffff;
     text-align:center;
     transition: all 0.2s;
     font-family: var(--body-font);
@@ -402,7 +417,7 @@ footer {
 }
 
 #intro-text {
-    margin-top: 10%;
+    margin-top: 5%;
     font-size: 10em;
     font-size: max(40px, 2vw);
     color: white;
@@ -512,12 +527,25 @@ footer {
 
 .about-me-text {
     align-self: flex-start;
+    border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+    box-shadow: 20px 20px rgba(0,0,0,.15);
+    transition: all .4s ease;
+    background-color: var(--block-bg-color);
+    color: var(--block-font-color);
+    margin: 5%;
+    padding: 3%;
+}
+
+#about-second {
+    margin-left: 0;
+    margin-right: 8%;
 }
 
 .about-me-text > h2 {
     font-family: var(--subtitle-font);
-    border-left: var(--header-bar-color) solid;
+    border-left:white solid;
     padding-left: 10px;
+    margin-left: 10px;
     font-size: max(40px, 2vw);
 }
 
@@ -541,12 +569,30 @@ footer {
     font-size: max(15px, 1.2vw);
 }
 
+
+@media (hover: hover){
+    .about-me-text:hover {
+        border-radius: 0% 0% 0% 0% / 0% 0% 5% 5% ;
+        box-shadow: 10px 10px rgba(0,0,0,.45);
+        background-color: var(--block-hover-color);
+    }
+}
+
 @media screen and (max-width: 700px){
     #about-grid {
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: auto auto auto auto;
         justify-items: center;
+    }
+
+    .about-me-text {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #about-second {
+        margin-right: 0
     }
 
     #about-headshot {
@@ -640,6 +686,7 @@ footer {
     margin-left: 2%;
     width: 100%;
     height: 100%;
+    color: var(--block-font-color);
 }
 
 .project-title {
@@ -652,6 +699,10 @@ footer {
     font-size: max(20px, 1vw);
     padding-bottom: 3%;
     font-family: var(--body-font);
+}
+
+.project-description > a {
+    color: var(--block-font-color);
 }
 
 .project-subpic{
@@ -793,6 +844,7 @@ footer {
     background-color: var(--block-bg-color);
     padding: 2%;
     align-self: center;
+    color: var(--block-font-color);
 }
 
 @media (hover: hover){
@@ -818,6 +870,7 @@ footer {
     align-self: center;
     width: 80%;
     padding: 20px;
+    color: var(--block-font-color);
 }
 
 .exp-title {
@@ -830,7 +883,7 @@ footer {
     .exp-work:hover {
     border-radius: 0% 0% 0% 0% / 0% 0% 5% 5% ;
     box-shadow: 10px 10px rgba(0,0,0,.45);
-    background-color: #d5e9ff;
+    background-color: var(--block-hover-color);
     }
 }
 
