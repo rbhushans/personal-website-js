@@ -46,7 +46,7 @@
 
         <section id="home-intro">
             <div id="blur-container">
-                <video id="home-background" preload="auto" autoplay loop="loop" muted="muted">
+                <video id="home-background" poster="./assets/background-poster.png" preload="auto" autoplay loop="loop" muted="muted">
                     <source src="assets/background.mp4" type="video/mp4">
                     This browser does not support this video.
                 </video>
@@ -54,12 +54,15 @@
 
             <h1 id="intro-text">hi! my name is 
                 <span style="display:block; margin:30px 0px" id="intro-name">Rohan Bhushan</span>
-                machine learning 👾 &larr;&rarr; web development 💻 &larr;&rarr; algorithms & data structures 📊
-             </h1>
+                <span id="intro-subtitle">machine learning 👾 &larr;&rarr; web development 💻 &larr;&rarr; algorithms & data structures 📊</span>
+            </h1>
+            <a id="arrow">
+                <img src="assets/white-down-arrow.png" width="80" height="80">
+            </a>
         </section>
 
         <main id="home-subsections">
-            <section class="home-section">
+            <section id="home-about" class="home-section hide">
                 <picture >
                     <source media="(min-width: 900px)" srcset="assets/headshot.JPG">
                     <source media="(min-width: 540px)" srcset="assets/headshot_medium.jpg">
@@ -76,7 +79,7 @@
                 </div>
             </section>
             
-            <section class="home-section">
+            <section id="home-projects" class="home-section show">
                 <div class="extra-pic">
                     <picture >
                         <source media="(min-width: 900px)" srcset="assets/football_dashboard.png">
@@ -98,7 +101,7 @@
                 </div>
             </section>
             
-            <section class="home-section">
+            <section id="home-experience" class="home-section show">
                 <picture >
                     <source media="(min-width: 900px)" srcset="assets/amazon_logo_1_.png">
                     <source media="(min-width: 540px)" srcset="assets/amazon_logo_1_.png">
@@ -151,6 +154,6 @@
             </div>
             <br />
         </footer>
-    
+        <script type="text/javascript" src="scripts/scroll.js"></script>
     </body>
 </html>
