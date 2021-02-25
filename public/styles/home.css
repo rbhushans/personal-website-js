@@ -532,7 +532,7 @@ footer {
     transition: all .4s ease;
     background-color: var(--block-bg-color);
     color: var(--block-font-color);
-    margin: 5%;
+    margin: 30px;
     padding: 3%;
     border-radius: 10px;
 }
@@ -923,7 +923,7 @@ details summary::-webkit-details-marker {
   
 details summary {
     padding: 0.5rem 0.5em;
-    border-top: 1px solid black;
+    border-top: 1px solid white;
     position: relative;
     cursor: pointer;
     font-size: 1.25rem;
@@ -934,7 +934,7 @@ details summary {
   
 details summary:after {
     content: "+";
-    color: black;
+    color: white;
     position: absolute;
     font-size: 1.75rem;
     line-height: 0;
