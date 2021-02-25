@@ -922,7 +922,7 @@ details summary::-webkit-details-marker {
 }
   
 details summary {
-    padding: 0.5rem 0.5em;
+    padding-top: 0.5rem;
     border-top: 1px solid white;
     position: relative;
     cursor: pointer;
@@ -1003,17 +1003,10 @@ details p, details ul {
 }
 
 #resume {
-    border: none;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
     border-radius: 50%;
-    width: 75px;
-    height: 75px;
+    width: 100px;
+    height: 100px;
     margin-left: auto;
     margin-right: auto;
     background-color: var(--block-bg-color);
