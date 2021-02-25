@@ -769,6 +769,11 @@ footer {
         margin-right: 5%;
     }
 
+    .project-text {
+        padding-left: 10%;
+        padding-right: 5%;
+    }
+
     .proj-skill {
         font-size: max(15px, 2.5vw);
     }
