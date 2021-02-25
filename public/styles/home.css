@@ -285,7 +285,7 @@ footer {
     flex-wrap: nowrap;
     align-items: center;
     background-color: var(--block-bg-color);
-    margin-bottom: 150px;
+    margin-top: 100px;
     padding: 2%;
     border-radius: 10px;
     color: var(--block-font-color);
@@ -534,6 +534,7 @@ footer {
     color: var(--block-font-color);
     margin: 5%;
     padding: 3%;
+    border-radius: 10px;
 }
 
 #about-second {
@@ -572,7 +573,7 @@ footer {
 
 @media (hover: hover){
     .about-me-text:hover {
-        border-radius: 0% 0% 0% 0% / 0% 0% 5% 5% ;
+        /* border-radius: 0% 0% 0% 0% / 0% 0% 5% 5% ; */
         box-shadow: 10px 10px rgba(0,0,0,.45);
         background-color: var(--block-hover-color);
     }
@@ -667,11 +668,12 @@ footer {
     transition: all .4s ease;
     background-color: var(--block-bg-color);
     margin-bottom: 8%;
+    border-radius: 10px;
 }
 
 @media (hover: hover){
     .project-card:hover {
-        border-radius: 0% 0% 0% 0% / 0% 0% 5% 5% ;
+        /* border-radius: 0% 0% 0% 0% / 0% 0% 5% 5% ; */
         box-shadow: 10px 10px rgba(0,0,0,.45);
         background-color: var(--block-hover-color);
     }
@@ -843,18 +845,17 @@ footer {
     align-items: flex-start;
     margin: 2%;
     width: 80%;
-    border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
     box-shadow: 20px 20px rgba(0,0,0,.15);
     transition: all .4s ease;
     background-color: var(--block-bg-color);
     padding: 2%;
     align-self: center;
     color: var(--block-font-color);
+    border-radius: 10px;
 }
 
 @media (hover: hover){
     #exp-education:hover {
-        border-radius: 0% 0% 0% 0% / 0% 0% 5% 5% ;
         box-shadow: 10px 10px rgba(0,0,0,.45);
         background-color: var(--block-hover-color);
     }
@@ -867,8 +868,7 @@ footer {
     align-items: flex-start;
     justify-content: flex-start;
     margin: 2%;
-    margin-bottom: 100px;
-    border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+    margin-bottom: 50px;
     box-shadow: 20px 20px rgba(0,0,0,.15);
     transition: all .4s ease;
     background-color: var(--block-bg-color);
@@ -876,6 +876,7 @@ footer {
     width: 80%;
     padding: 20px;
     color: var(--block-font-color);
+    border-radius: 10px;
 }
 
 .exp-title {
@@ -886,9 +887,8 @@ footer {
 
 @media (hover: hover){
     .exp-work:hover {
-    border-radius: 0% 0% 0% 0% / 0% 0% 5% 5% ;
-    box-shadow: 10px 10px rgba(0,0,0,.45);
-    background-color: var(--block-hover-color);
+        box-shadow: 10px 10px rgba(0,0,0,.45);
+        background-color: var(--block-hover-color);
     }
 }
 
