@@ -905,6 +905,11 @@ footer {
     min-width: 90px;
 }
 
+#ucsd-fallen {
+    width: 40%;
+    align-self: center;
+}
+
 .exp-block {
     padding-left: 30px;
     flex-grow: 2;
@@ -1036,6 +1041,12 @@ details p, details ul {
 
 #mba-pic {
     filter: brightness(0) saturate(100%) invert(100%) sepia(7%) saturate(0%) hue-rotate(117deg) brightness(106%) contrast(100%);
+}
+
+@media screen and (max-width: 1000px){
+    #ucsd-fallen{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 700px){
