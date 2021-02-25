@@ -401,8 +401,7 @@ footer {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 100px;
-    width: 10%;
+    bottom: 40px;
     animation: bounce 2s infinite;
 }
 
@@ -412,14 +411,14 @@ footer {
     margin-left: 0;
     position: relative;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
-    height: 100%;
+    height: 90%;
     font-size:100px;
 }
 
 #intro-text {
     margin-top: 5%;
     font-size: 10em;
-    font-size: max(40px, 2vw);
+    font-size: max(30px, 2vw);
     color: white;
     animation: fadein;
     animation-duration: 2s;
@@ -429,7 +428,7 @@ footer {
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    padding: 7% 2%;
+    padding: 4% 2%;
     width: 80%;
     border: white solid 5px;
     background: rgba(0, 0, 0, 0.507);
@@ -467,19 +466,22 @@ footer {
     height: 100%;
 }
 
+@media screen and (max-width: 1000px){
+    #intro-text {
+        margin-top: 10%;
+    }
+}
+
 @media screen and (max-width: 540px){
     #intro-text {
         font-size: max(30px, 4vw);
         animation-duration: 3s;
         border: white solid;
         max-height: none;
-        margin-top: 100px;
-        padding: 15% 2%;
     }
     
     #home-intro {
         height: 100%;
-        margin-top: 100px;
     }
 
     #intro-name {
@@ -488,6 +490,10 @@ footer {
 
     #intro-subtitle {
         font-size: max(20px, 1vw);
+    }
+
+    #arrow{
+        bottom: 120px;
     }
 }
 
