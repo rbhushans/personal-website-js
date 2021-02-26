@@ -1157,7 +1157,11 @@ form {
     border-radius: 10px;
 }
 
-
+#err-404 {
+    margin-left: 2%;
+    font-family: var(--body-font);
+    font-size: 20px;
+}
 
 
 
