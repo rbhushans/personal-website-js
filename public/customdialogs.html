@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Custom Dialogs</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <dialog id="alert">
+            <form method="dialog">
+                <p>Alert pressed!</p>
+                <button>Ok</button>
+            </form>
+        </dialog>
+
+        <dialog id="confirm">
+            <form method="dialog">
+                <p>Do you confirm this?</p>
+                <button id="confirm-cancel">Cancel</button>
+                <button id="confirm-ok">Ok</button>
+            </form>
+        </dialog>
+
+        <dialog id="prompt">
+            <form method="dialog">
+                <p>What is your name?</p>
+                <input type="text" id="prompt-input" name="prompt-input"><br/> <br/>
+                <button id="prompt-cancel">Cancel</button>
+                <button id="prompt-ok">Ok</button>
+            </form>
+        </dialog>
+
+        <button id="alert-button">Alert</button>
+        <button id="confirm-button">Confirm</button>
+        <button id="prompt-button">Prompt</button>
+        <br/>
+        <output id="output-tag"></output>
+        <script type="text/javascript" src="DOMPurify-main/dist/purify.min.js"></script>
+        <script type="module" src="./js/customdialog.js"></script>
+    </body>
+</html>

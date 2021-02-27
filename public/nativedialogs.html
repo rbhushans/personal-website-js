@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Native Dialogs</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <button id="alert-button">Alert</button>
+        <button id="confirm-button">Confirm</button>
+        <button id="prompt-button">Prompt</button>
+        <button id="safe-button">Safer Prompt</button>
+        <br/>
+        <output id="output-tag"></output>
+        <script type="text/javascript" src="DOMPurify-main/dist/purify.min.js"></script>
+<!-- <b onmousehover="alert('pwned')">Roll Me</b> -->
+        <script>
+            window.addEventListener('DOMContentLoaded', function () {
+                document.getElementById("alert-button").addEventListener("click", function() {
+                    document.getElementById("output-tag").innerHTML = ""
+                    setTimeout(function() {
+                        alert("Alert!");
+                    },10)
+                });
+
+                document.getElementById("confirm-button").addEventListener("click", () => {
+                    document.getElementById("output-tag").innerHTML = ""
+                    setTimeout(function() {
+                        let c = confirm("Confirm your input")
+                        document.getElementById("output-tag").innerHTML = `The value returned by the confirm method is: ${c}`;
+                    }, 10)
+                });
+
+                document.getElementById("prompt-button").addEventListener("click", function() {
+                    document.getElementById("output-tag").innerHTML = "";
+                    setTimeout(function() {
+                        let msg = prompt("Please enter your name");
+                        let input = `The user entered: "${msg}"`;
+                        if(msg === "" || msg == null){
+                            input = "The user did not enter anything";
+                        }
+                        document.getElementById("output-tag").innerHTML = input;
+                    }, 10)
+                    
+                });
+
+                document.getElementById("safe-button").addEventListener("click", function() {
+                    document.getElementById("output-tag").innerHTML = "";
+                    setTimeout(function() {
+                        let msg = prompt("Please enter your name");
+                        let input;
+                        if(msg === "" || msg == null){
+                            input = "The user did not enter anything";
+                        }else{
+                            let clean = DOMPurify.sanitize(msg);
+                            input = `The user entered: "${clean}"`;
+                        }
+                        
+                        document.getElementById("output-tag").innerHTML = input;
+                    }, 10)
+                });
+            });
+        </script>
+    </body>
+</html>

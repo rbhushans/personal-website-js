@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CRUD Blog Posts</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="module" src="./js/blog.js"></script> 
+    </head>
+    <body>
+        <dialog id="blog-prompt">
+            <form method="dialog">
+                <label for="title-input">Title:</label>
+                <input type="text" id="title-input" name="title-input"><br/> <br/>
+                <label for="date-input">Date:</label>
+                <input type="date" id="date-input" name="date-input"><br/> <br/>
+                <label for="title-input">Summary:</label> <br/>
+                <textarea rows="10" cols="50" id="summary-input" name="summary-input"></textarea><br/> <br/>
+                <button id="blog-cancel">Cancel</button>
+            </form>
+            <button id="blog-ok">Ok</button>
+        </dialog>
+        <dialog id="alert">
+            <form method="dialog">
+                <p>Please enter all fields</p>
+                <button>Ok</button>
+            </form>
+        </dialog>
+        <template id="del-template">
+            <dialog id="confirm">
+                <form method="dialog">
+                    <p>Do you confirm this?</p>
+                    <button>Cancel</button>
+                    <button class="del-ok">Ok</button>
+                </form>
+            </dialog>
+        </template>
+        <template id="edit-template">
+            <dialog>
+                <form method="dialog">
+                    <label for="title-edit">Title:</label>
+                    <input type="text" class="title-edit" name="title-edit"><br/> <br/>
+                    <label for="date-edit">Date:</label>
+                    <input type="date" class="date-edit" name="date-edit"><br/> <br/>
+                    <label for="title-edit">Summary:</label> <br/>
+                    <textarea rows="10" cols="50" class="summary-edit" name="summary-edit"></textarea><br/> <br/>
+                    <button class="edit-cancel">Cancel</button>
+                </form>
+                <button class="edit-ok">Ok</button>
+            </dialog>
+        </template>
+        <h1>Blog Posts</h1>
+        <output id="empty-data"></output>
+        <ul id="post-list">
+        </ul>
+
+        <button id="add-post">Add Blog Post</button>
+    </body>
+</html>

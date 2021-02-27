@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CRUD Blog Posts</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="crud.css" type="text/css">
+        <script type="module" src="./js/styledBlog.js"></script> 
+    </head>
+    <body>
+        <dialog id="alert">
+            <form method="dialog">
+                <p>Please enter all fields</p>
+                <button>Ok</button>
+            </form>
+        </dialog>
+        <dialog id="blog-prompt">
+            <form method="dialog">
+                <label for="title-input">Title:</label>
+                <input type="text" id="title-input" name="title-input"><br/> <br/>
+                <label for="date-input">Date:</label>
+                <input type="date" id="date-input" name="date-input"><br/> <br/>
+                <label for="title-input">Summary:</label> <br/>
+                <textarea rows="10" cols="50" id="summary-input" name="summary-input"></textarea><br/> <br/>
+            </form>
+            <div class="blog-buttons">
+                <button id="blog-cancel">Cancel</button>
+                <button id="blog-ok">Ok</button>
+            </div>
+        </dialog>
+        <template id="edit-template">
+            <dialog class="edit-dialog">
+                <form method="dialog">
+                    <label for="title-edit">Title:</label>
+                    <input type="text" class="title-edit" name="title-edit"><br/> <br/>
+                    <label for="date-edit">Date:</label>
+                    <input type="date" class="date-edit" name="date-edit"><br/> <br/>
+                    <label for="title-edit">Summary:</label> <br/>
+                    <textarea rows="10" cols="50" class="summary-edit" name="summary-edit"></textarea><br/> <br/>
+                </form>
+                <div class="edit-buttons">
+                    <button class="edit-cancel">Cancel</button>
+                    <button class="edit-ok">Ok</button>
+                </div>
+            </dialog>
+        </template>
+        <template id="del-template">
+            <dialog class="confirm">
+                <form method="dialog">
+                    <p>Do you confirm this?</p>
+                    <button>Cancel</button>
+                    <button class="del-ok">Ok</button>
+                </form>
+            </dialog>
+        </template>
+        <template id="post-template">
+            <section class="blog-post">
+                <div class="content">
+                    <h2 class="blog-title"></h2>
+                    <hr />
+                    <p><i class="blog-date"></i></p>
+                    <p class="blog-summary"></p>
+                </div>
+                <div class="buttons">
+                    <button class="blog-edit">
+                        <p>Edit</p>
+                        <img src="edit-icon.png" alt="Edit Icon" width="20" height="20">
+                    </button>
+                    <button class="blog-del">
+                        <p>Delete</p>
+                        <img src="delete-icon.png" alt="Edit Icon" width="20" height="20">
+                    </button>
+                </div>
+            </section>
+        </template>
+        <h1>Blog Posts</h1>
+        <output id="empty-data"></output>
+        <ul id="post-list">
+        </ul>
+
+        <button id="add-post">Add Blog Post</button>
+    </body>
+</html>
